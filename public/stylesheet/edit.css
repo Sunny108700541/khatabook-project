@@ -1,0 +1,110 @@
+/* General Body Styling */
+body {
+     font-family: 'Arial', sans-serif;
+     background-color: #7dcea0;
+     color: #333;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+ }
+ 
+ /* Header Styling */
+ h1 {
+     font-size: 2.5rem;
+     color: #2c3e50;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+ 
+ /* Form Container */
+ form {
+     background: #ffffff;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+     max-width: 500px;
+     width: 90%;
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+ }
+ 
+ /* Textarea Styling */
+ textarea {
+     width: 100%;
+     height: 150px;
+     padding: 10px;
+     font-size: 1rem;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     resize: none;
+     box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+     background-color: #f9f9f9;
+ }
+ 
+ /* Submit Button Styling */
+ input[type="submit"] {
+     padding: 10px 20px;
+     font-size: 1rem;
+     color: #fff;
+     background-color: #3498db;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+ }
+ 
+ input[type="submit"]:hover {
+     background-color: #2980b9;
+ }
+ 
+ /* Media Queries */
+ 
+ /* For Tablets (max-width: 768px) */
+ @media (max-width: 768px) {
+     h1 {
+         font-size: 2rem; /* Slightly smaller font size */
+     }
+ 
+     form {
+         padding: 15px; /* Reduce padding for smaller screens */
+         max-width: 400px; /* Narrower width */
+     }
+ 
+     textarea {
+         height: 120px; /* Smaller height for the text area */
+         font-size: 0.9rem; /* Smaller text size */
+     }
+ 
+     input[type="submit"] {
+         padding: 8px 15px; /* Adjust button size */
+         font-size: 0.9rem;
+     }
+ }
+ 
+ /* For Mobile Phones (max-width: 480px) */
+ @media (max-width: 480px) {
+     h1 {
+         font-size: 1.8rem; /* Further reduce font size */
+     }
+ 
+     form {
+         padding: 10px; /* Minimal padding */
+         max-width: 300px; /* Compact form width */
+     }
+ 
+     textarea {
+         height: 100px; /* Smaller text area */
+         font-size: 0.8rem; /* Smaller text size */
+     }
+ 
+     input[type="submit"] {
+         padding: 7px 10px; /* Compact button size */
+         font-size: 0.8rem;
+     }
+ }
+ 

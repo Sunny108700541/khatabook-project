@@ -1,0 +1,121 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #7dcea0;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Container styling */
+#box {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-width: 0.5px;
+    border-radius: 5px;
+    background-color: #5499c7;
+    margin-top: 20px;
+}
+
+/* Header styles */
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Link styles */
+a {
+    display: inline-block;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #fff;
+    background-color: #28a745;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #218838;
+}
+
+/* Subheading styles */
+h3 {
+    font-size: 1.25rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Additional link styles for "edit" buttons */
+a[href^="/edit"] {
+    background-color: #ffc107;
+    color: #333;
+}
+
+a[href^="/edit"]:hover {
+    background-color: #e0a800;
+}
+
+/* Media Queries */
+
+/* For Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    #box {
+        width: 80%; /* Adjust container width */
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 2rem; /* Reduce font size for header */
+    }
+
+    a {
+        font-size: 0.9rem; /* Slightly smaller links */
+        padding: 8px 12px; /* Adjust padding for links */
+    }
+
+    h3 {
+        font-size: 1.1rem; /* Reduce subheading size */
+    }
+}
+
+/* For Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px; /* Reduce body padding */
+    }
+
+    #box {
+        width: 100%; /* Full width for mobile */
+        padding: 5px; /* Smaller padding */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Further reduce header size */
+    }
+
+    a {
+        font-size: 0.8rem; /* Compact links */
+        padding: 6px 10px; /* Minimal padding for links */
+    }
+
+    h3 {
+        font-size: 1rem; /* Smaller subheading */
+    }
+}

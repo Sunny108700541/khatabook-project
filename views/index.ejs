@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="/stylesheet/index.css">
+</head>
+<body>
+     <h1>Khatabook</h1>
+     <a href="/create">Create new Hisab</a>
+
+     <% if (file.length > 0) { %> <!-- Corrected conditional logic -->
+          <% file.forEach(function(filename) { %>
+               <div id="box">
+               <h3><%= filename %></h3>
+               <a href="/edit/<%= filename %>">Edit</a>
+               <a href="/hisab/<%= filename %>">view</a>
+               <a href="/delete/<%= filename %>">Delete</a>
+          </div>
+          <% }); %> <!-- Properly closed the forEach block -->
+     <% } else { %>
+          <h3>Nothing to show</h3>
+     <% } %>
+</body>
+</html>
